@@ -24,9 +24,7 @@ This project presents a Python-based simulation of an inverted pendulum system c
 ## Workflow
 <img width="478" height="512" alt="PI Controller drawio" src="https://github.com/user-attachments/assets/b7571595-6338-4edf-baf5-154a757b674a" />
 
-## Matemathical Model
 ## Mathematical Model
-
 The dynamics of the inverted pendulum are modeled using the rotational equation of motion:
 
 $$
