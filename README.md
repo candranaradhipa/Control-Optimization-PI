@@ -21,6 +21,9 @@ This project presents a Python-based simulation of an inverted pendulum system c
 ├── README.md
 ```
 
+## System Architecture
+<img width="462" height="935" alt="Initial Disturbance" src="https://github.com/user-attachments/assets/847abedc-d355-40ab-8236-e9b14344b2d7" />
+
 ## Workflow
 <img width="478" height="512" alt="PI Controller drawio" src="https://github.com/user-attachments/assets/b7571595-6338-4edf-baf5-154a757b674a" />
 
@@ -49,3 +52,8 @@ where
 - $l$ : pendulum length (m)
 - $c$ : damping coefficient
 - $I$ : pendulum moment of inertia (kg·m²)
+
+> ### PI Controller <a name = 'PI'></a>
+$$
+u(t)=Kp​e(t)+Ki​∫e(t)dt
+$$
