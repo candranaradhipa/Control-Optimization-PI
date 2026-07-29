@@ -83,3 +83,32 @@ The optimization minimizes the accumulated squared angular error throughout the 
 | Ki Range | 0–100 |
 | Simulation Time | 10 s |
 | Time Step | 0.01 s |
+
+## 📈 Simulation Results
+
+The figures below illustrate the optimization performance and the final behavior of the inverted pendulum after the PI controller parameters have been optimized using the Artificial Bee Colony (ABC) algorithm.
+
+> ### Convergence of ABC Optimization <a name = 'Convergence'></a>
+
+<img width="640" height="480" alt="Convergence of ABC" src="https://github.com/user-attachments/assets/3e9b229b-3200-4acd-9a13-3a9422f277f5" />
+
+The convergence graph shows that the objective function decreases gradually throughout the optimization process, indicating that the Artificial Bee Colony algorithm successfully searches for better PI controller parameters over successive iterations.
+
+> ### Inverted Pendulum Simulation <a name = 'Simulation1'></a>
+
+<img width="800" height="600" alt="Simulations Convergence of ABC" src="https://github.com/user-attachments/assets/9c3d2cae-04fe-4137-b0a1-804b54f7e7bd" />
+
+The optimized PI controller stabilizes the inverted pendulum after an initial disturbance while maintaining the upright equilibrium position.
+
+The optimization process converges gradually from an initial cost of approximately 2.125 to around 1.95 after 100 iterations. The decreasing objective value indicates that the Artificial Bee Colony algorithm successfully improves the PI controller parameters during the optimization process.
+
+## Best Optimization Result
+
+| Parameter | Value |
+|-----------|------:|
+| Optimal Kp | 10.9863 |
+| Optimal Ki | 0.0000 |
+| Population Size | 30 |
+| Maximum Iterations | 100 |
+
+The optimization process converged to an optimal proportional gain of **10.9863**, while the optimal integral gain was **0.0000**. This indicates that, under the adopted mathematical model and objective function, proportional control alone was sufficient to minimize the accumulated angular error.
