@@ -112,3 +112,10 @@ The optimization process converges gradually from an initial cost of approximate
 | Maximum Iterations | 100 |
 
 The optimization process converged to an optimal proportional gain of **10.9863**, while the optimal integral gain was **0.0000**. This indicates that, under the adopted mathematical model and objective function, proportional control alone was sufficient to minimize the accumulated angular error.
+
+# Contributor
+[**Candra Naradhipa Cahyakusuma**](https://github.com/candranaradhipa)
+
+[Robotics and AI Engineering](https://ftmm.unair.ac.id/teknik-robotika-dan-kecerdasan-buatan-program-studi/), [Universitas Airlangga](https://unair.ac.id/)
+
+<candradhipa16@gmail.com>
