@@ -57,3 +57,29 @@ where
 $$
 u(t)=Kp​e(t)+Ki​∫e(t)dt
 $$
+
+The PI controller computes the control torque based on
+- proportional error
+- accumulated integral error
+
+The objective is to drive the pendulum angle toward zero radians.
+
+> ### Artificial Bee Colony Optimization <a name = 'ABC'></a>
+Each food source represents one candidate solution [Kp, Ki]. The quality of each candidate is evaluated using the cost function obtained from the pendulum simulation. During every iteration, candidate solutions are updated and compared. Better solutions replace inferior ones until the maximum number of iterations is reached.
+
+> ### Cost Function <a name = 'Cost'></a>
+$$
+J=i=1∑N​θi2​
+$$
+
+The optimization minimizes the accumulated squared angular error throughout the simulation.
+
+## Optimization Parameters
+| Parameter | Value |
+|-----------|------:|
+| Population Size | 30 |
+| Maximum Iteration | 100 |
+| Kp Range | 0–100 |
+| Ki Range | 0–100 |
+| Simulation Time | 10 s |
+| Time Step | 0.01 s |
